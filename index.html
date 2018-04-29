@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Title</title>
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css">
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <!-- Header section -->
+    <header class="section">
+        <div class="container">
+            <div class="columns">
+                <div class="column is-8-tablet is-offset-2-tablet is-8-desktop is-offset-2-desktop">
+                    <!-- App Header text -->
+                    <div class="header">
+                        <h1 class="is-size-1">Book List App</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="columns">
+                <div class="column is-8-tablet is-8-desktop is-offset-2-tablet is-offset-2-desktop">
+                    <!-- App Input Area -->
+                    <form action="#">
+                        <div class="field">
+                            <label class="label">Name</label>
+                            <div class="control has-icons-left ">
+                                <input id="name" class="input" type="text" placeholder="Book Name">
+                                <span class="icon is-small is-left">
+                                    <i class="fas fa-book"></i>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <label class="label">Author</label>
+                            <div class="control has-icons-left ">
+                                <input id="author" class="input" type="text" placeholder="Author Name">
+                                <span class="icon is-small is-left">
+                                    <i class="fas fa-user"></i>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <label class="label">ISBN</label>
+                            <div class="control has-icons-left ">
+                                <input id="isbn" class="input" type="text" placeholder="ISBN Number">
+                                <span class="icon is-small is-left">
+                                    <i class="fas fa-sort-numeric-up"></i>
+                                </span>
+                            </div>
+                        </div>
+                        <button class="button is-primary">Add Book</button>
+                    </form>
+                </div>
+            </div>
+            <!-- App book list area -->
+            <div class="columns">
+                <div class="column is-12-tablet is-8-desktop is-offset-2-desktop">
+                    <table class="table is-fullwidth  is-hoverable is-striped">
+                        <thead>
+                            <tr>
+                                <th>Book Name</th>
+                                <th>Book Author</th>
+                                <th>Book ISBN</th>
+                            </tr>
+                        </thead>
+                        <tbody class="tbody">
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- End header -->
+    <!-- script -->
+    <script src="js/app.js"></script>
+</body>
+
+</html>
